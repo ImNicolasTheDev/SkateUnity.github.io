@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Skateboard Unity</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Nicolas">
+        <meta name="description" content="Ce site est sur le thème vaste du skate :)">
+        <link rel="stylesheet" href="../css/default.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="../css/contact.css" type="text/css" media="screen" />
+        <link rel="icon" type="image/x-icon" href="../src/pictures/skateIcon.ico">
+    </head>
+    <body>
+        <header>
+            <nav id="headerMenu">
+                <h2><a href="../index.html">Home</a></h2>
+                <h2><a href="news.html">News</a></h2>
+                <div class="dropdownBox">
+                    <h2 class="menuInfosBtn">More about us</h2>
+                    <div class="menuInfos">
+                        <h2><a class="moreInfos" href="contact.html">Contact Us</a></h2>
+                        <h2><a class="moreInfos" href="media.html">Medias and Photos</a></h2>
+                    </div>
+                </div>
+                <div class="socialLinks">
+                    <a href="instagram.com">
+                        <img id="insta" src="../src/pictures/instaIc.png" alt="Icon">
+                    </a>
+                    <a href="snapchat.com">
+                        <img id="snap" src="../src/pictures/snapIc.png" alt="Icon">
+                    </a>
+                    <a href="twitter.com">
+                        <img id="twitter" src="../src/pictures/twitterIc.png" alt="Icon">
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <div class="topPart">
+            <h1 id="subTitle"><u>You want to contact us? Fill up the form or DM us on Social Medias!</u></h1>
+            <br/>
+        </div>
+        <div class="layoutDeco">
+            <h2>Instagram : <a class="social" href="instagram.com/">@SkateboardUnity</a></h2>
+            <h2>Snapchat : <a class="social" href="snapchat.com/">@SkateboardUnity</a></h2>
+            <h2>Twitter : <a class="social" href="twitter.com/">@SkateboardUnity</a></h2>
+        </div>
+        <br/>
+        <form class="form" action="../php/form.php" method="POST">
+            <h2><u><b>Fill the form :</b></u></h2>
+            <div>
+                <label for="id_prenom" value="surname">First name: </label>
+                <input id="box" name="surname" type="text" id="id_prenom" required>
+            </div>
+            <div>
+                <label for="id_nom" value="name">Name: </label>
+                <input id="box" name="name" type="text" id="id_nom" required>
+            </div>
+            <div>
+                <label for="id_email" value="email">Email: </label>
+                <input id="box" name="email" type="email" id="id_email" required></input>
+            </div>
+            <select name="reason" id="reasons" required>
+                <option id="contactUs" value="Feedback">Contact Us - Send a feedback</option>
+                <option id="reportBug" value="Bug report">Report a bug</option>
+            </select>
+            <div id="radio">
+                <label for="firstDemand">First Demand</label>
+                <input type="radio" name="demand" id="firstDemand" value="First Demand"></input>
+            </div>
+            <div id="radio">
+                <label for="notFirstDemand">Already sent a demand</label>
+                <input type="radio" name="demand" id="notFirstDemand" value="Not the first Demand"></input>
+            </div>
+            <textarea name="box" id="box" cols="50" rows="8" required></textarea>
+            <div>
+                <label for="id_checkbox">I agree to share my informations with "UnitySkate" </label>
+                <input type="checkbox" id="id_checkbox" name="id_checkbox" required>
+            </div>
+            <input id="reset" type="reset" value="Reset">
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        <br/>
+        <br/>
+        <footer>
+            <br/>
+            <br/>
+            <p>2022, Blondeau Nicolas Groupe 1 - All rights reserved. <a href="../html/siteMap.html"><u>Site Map</u></a></p>
+        </footer>
+    </body>
+</html>

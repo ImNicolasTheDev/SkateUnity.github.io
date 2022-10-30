@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Quicksand;
+  src: url(../../../font/Quicksand-Bold.otf);
+}
+
+.topPart{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-direction: column;
+	height: 100px;
+	text-shadow: 2px 2px #835d91;
+	padding-bottom: 30px;
+	box-shadow: 0px 20px 20px 0px #84a98c;
+	background-color: #84a98c;
+}
+
+body{
+	background-color: #F4A261;
+}
+
+body > p{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+a{
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+body > img, body > embed{
+  background-color: #E9C46A;
+  padding: 20px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 40px;
+  border-top: 6px solid #E76F51;
+  border-bottom: 6px solid #E76F51;
+  border-radius: 10px;
+  box-shadow: 20px 20px 50px 10px #ffb4a2 inset;
+  width: 75%;
+}
+
+#credits{
+	text-align: left;
+	margin-left: 5%;
+	margin-bottom: 5em;
+}

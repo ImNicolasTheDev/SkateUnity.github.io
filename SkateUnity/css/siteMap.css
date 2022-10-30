@@ -1,0 +1,15 @@
+.topPart{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-direction: column;
+	height: 100px;
+	text-shadow: 2px 2px #835d91;
+	padding-bottom: 30px;
+	box-shadow: 0px 20px 20px 0px #84a98c;
+	background-color: #84a98c;
+}
+
+#siteImg{
+	width: 100%;
+}

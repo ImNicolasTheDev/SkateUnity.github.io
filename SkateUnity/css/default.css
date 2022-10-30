@@ -1,0 +1,244 @@
+@font-face {
+  font-family: Quicksand;
+  src: url(../src/font/Quicksand-Bold.otf);
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+header{
+	height: fit-content;
+	text-align: center;
+	position: sticky;
+	top: 0px;
+	background-color: #264653;
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, figcaption, li{
+	font-family: Quicksand;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	margin: 0px;
+	padding: 8px;
+	transition-duration: 0.5s;
+	transition-property: font-size, color;
+}
+
+a{
+	font-family: Quicksand;
+	color: #FFFFFF;
+	text-align: center;
+  color: inherit; /* no blue colors for links */
+  text-decoration: inherit; /* no underline */
+}
+
+body{
+	margin: 0px;
+	background-color: #E9C46A;
+}
+
+.socialLinks{
+	margin-left: 10%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float: right;
+	position: sticky;
+	right: 5%;
+  top: 20px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	border-radius: 30px;
+	text-align: center;
+	width : 300px;
+}
+
+#insta{
+	width: 50px;
+	height: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#snap{
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#twitter{
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#bodyDiv{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 4em;
+	display: block;
+}
+
+#headerMenu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	justify-content: center;
+  align-items: center;
+  height: fit-content;
+}
+
+#headerMenu > h2{
+	margin-left: 3%;
+	margin-right: 3%;
+	background-color: rgba(0, 0, 0, 0);
+	transition-duration: 0.2s;
+	border-radius: 30px;
+	transition-property: background-color;
+}
+
+#headerMenu > h2:hover, #headerMenu > .dropdownBox:hover{
+	background-color: rgba(255, 255, 255, .2);
+	border-radius: 30px;
+}
+
+.dropdownBtn{
+  background-color: #04AA6D;
+  border: none;
+}
+
+.dropdownBox{
+  position: relative;
+  display: inline-block; 
+}
+
+.menuInfos{
+  display: none;
+  position: absolute;
+  background-color: #e3d5ca;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 25px;
+  transition-duration: 1s;
+  transition-property: background-color, min-width;
+}
+
+.menuInfos a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 15px;
+}
+
+.menuInfos a:hover {
+	transition: background-color;
+	background-color: #d5bdaf;
+}
+
+.dropdownBox:hover .menuInfos {
+	display: block;
+}
+
+img{
+	border-radius: 11px;
+}
+
+#goUpChild{
+	width: fit-content;
+	padding: 15px;
+	background-color: #e3d5ca;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	transition-duration: 0.5s;
+	transition-property: background-color;
+}
+
+#goUpChild:hover{
+	background-color: #FFFFFF;
+}
+
+#goUp{
+	display: flex;
+	justify-content: center;
+}
+
+#arrowUp{
+	width: 40px;
+	height: 40px;
+}
+
+footer{
+	padding-top: 1em;
+	padding-bottom: 3em;
+	border-top: 6px solid #264653;
+	border-bottom: 6px solid #264653;
+	background-color: #2A9D8F;
+}
+
+
+@media screen and (max-width: 800px){
+	h1, h2, h3, h4, h5, h6, p{
+		transition
+		font-family: Quicksand;
+		color: #ffffff;
+		text-align: center;
+		text-decoration: none;
+		font-size: 90%;
+		margin: 0px;
+		padding: 4px;
+	}
+
+	header{
+		padding: 10px;
+	}
+
+	#headerMenu > h2{
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	#headerMenu{
+		flex-direction: column;
+	}
+
+	.socialLinks{
+		margin-top: 5px;
+		margin-right: 3%;
+		position: absolute;
+		padding: 0px;
+		top: 125px;
+		background-color: #FFFFFF;
+		border-radius: 20px;
+		width: 70px;
+	}
+
+	#insta{
+		width: 30px;
+		height: 30px;
+	}
+
+	#snap{
+		width: 30px;
+		height: 30px;
+	}
+
+	#twitter{
+		width: 30px;
+		height: 30px;
+	}
+}
